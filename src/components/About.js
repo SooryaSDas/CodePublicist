@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import CountUp from 'react-countup';
 
 const About = () => {
 
@@ -37,7 +38,7 @@ const About = () => {
                 <p className='pt-6 leading-loose'>From sleek mobile applications to robust enterprise solutions, our expertise spans a wide spectrum of technologies. Whether you are a startup with a groundbreaking idea or an established enterprise seeking digital transformation, Code Publicist is your reliable partner.</p>
                 <button class="bg-purple-800 hover:bg-black text-white font-bold py-2 px-4 rounded-lg mt-3 mb-5">Brochure</button>
             </div>
-            <div className='ml-60 pt-36 pr-7 max-sm:ml-2 max-sm:pt-20'>
+            <div className='ml-60 pt-36 max-sm:ml-1 max-sm:pt-20'>
                 <ul>
                     <li className='inline-block font-bold hover:border p-5'>Frontends</li>
                     <li className='inline-block ml-12 font-bold hover:border p-5'>Backends</li>
@@ -52,6 +53,24 @@ const About = () => {
                     <div className='inline-block w-44 pt-2'><p>Sass</p></div>
 
                 </div>
+            </div>
+        </div>
+        <div className='grid md:grid-cols-4 md:ml-60 md:my-8 max-sm:grid-cols-2 max-sm:ml-20 max-sm:my-10 gap-0'>
+            <div>
+                <CountUp className='bg-yellow-600 rounded-full p-4 px-5 font-bold text-4xl' end={4} duration={6} onEnd={({ pauseResume, reset, start, update }) =>  start(9000)}/>
+                <h4 className='pt-5 max-sm:mt-3'>Countries</h4>
+            </div>
+            <div>
+                <CountUp className='bg-yellow-600 rounded-full p-4 px-5 text-4xl font-bold' end={19} duration={6}/>
+                <h4 className='pt-5 max-sm:mt-3'>Employees</h4>
+            </div>
+            <div>
+                <CountUp className='bg-yellow-600 rounded-full p-4 px-5 text-4xl font-bold max-sm:mt-40' end={527} duration={6}/>
+                <h4 className='pt-5 max-sm:mt-3'>Followers</h4>
+            </div>
+            <div>
+                <CountUp className='bg-yellow-600 rounded-full p-4 px-5 text-4xl font-bold' end={12} duration={6}/>
+                <h4 className='pt-5 max-sm:mt-3'>Projects</h4>
             </div>
         </div>
     </div>
