@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import CountUp from 'react-countup';
 
 const About = () => {
@@ -12,7 +12,7 @@ const About = () => {
         link.click();
         document.body.removeChild(link);
     };
-   
+
   return (
     <div>
         <div className='bg-purple-900 h-auto w-full grid grid-cols-2 max-sm:grid-cols-1'>
@@ -55,21 +55,21 @@ const About = () => {
                 </div>
             </div>
         </div>
-        <div className='grid md:grid-cols-4 md:ml-60 md:my-8 max-sm:grid-cols-2 max-sm:ml-20 max-sm:py-20 gap-0'>
+        <div className='grid md:grid-cols-4 md:ml-60 md:my-8 max-sm:grid-cols-2 max-sm:ml-20 max-sm:my-20 gap-0'>
             <div>
-                <CountUp className='bg-yellow-600 rounded-full py-4 px-5 text-4xl font-bold' end={4} duration={6} onEnd={({ pauseResume, reset, start, update }) =>  start()}/>
+                <CountUp className='bg-yellow-600 rounded-full py-4 px-5 font-bold text-4xl' end={4} duration={6} onEnd={({ pauseResume, reset, start, update }) =>  start()}/>
                 <h4 className='pt-5 max-sm:mt-3'>Countries</h4>
             </div>
             <div>
-                <CountUp className='bg-yellow-600 rounded-full py-4 px-5 text-4xl font-bold' end={19} duration={6} onEnd={({ pauseResume, reset, start, update }) =>  start()}/>
+                <CountUp className='bg-yellow-600 rounded-full py-4 px-5 text-4xl font-bold' end={19} duration={6}/>
                 <h4 className='pt-5 max-sm:mt-3'>Employees</h4>
             </div>
             <div>
-                <CountUp className='bg-yellow-600 rounded-full py-4 px-5 text-4xl font-bold' end={527} duration={6} onEnd={({ pauseResume, reset, start, update }) =>  start()}/>
+                <CountUp className='bg-yellow-600 rounded-full py-4 px-5 text-4xl font-bold max-sm:mt-40' end={527} duration={6}/>
                 <h4 className='pt-5 max-sm:mt-3'>Followers</h4>
             </div>
             <div>
-                <CountUp className='bg-yellow-600 rounded-full py-4 px-5 text-4xl font-bold' end={12} duration={6} onEnd={({ pauseResume, reset, start, update }) =>  start()}/>
+                <CountUp className='bg-yellow-600 rounded-full py-4 px-5 text-4xl font-bold' end={12} duration={6}/>
                 <h4 className='pt-5 max-sm:mt-3'>Projects</h4>
             </div>
         </div>
