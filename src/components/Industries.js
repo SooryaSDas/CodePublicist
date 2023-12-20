@@ -8,7 +8,7 @@ const Industries = () => {
     <div className='p-36 text-5xl font-bold bg-yellow-600 max-sm:p-20'>
       <h1>Industries <br /> We Serve ____</h1>
      
-      <Carousel className='md:items-center ml-48 mt-10 max-sm:ml-3 max-sm:' autoPlay infiniteLoop centerMode interval={2000}>
+      <Carousel className='md:items-center md:ml-30 mt-10 max-sm:ml-3' autoPlay infiniteLoop centerMode interval={2000}>
                 <div>
                     <img src="./images/logo.png" />
                     <p className="legend">Legend 1</p>
